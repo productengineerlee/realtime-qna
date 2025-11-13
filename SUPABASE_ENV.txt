@@ -1,0 +1,20 @@
+# ⚠️ SUPABASE 환경 변수 설정 가이드
+
+## 1. .env 파일 생성
+프로젝트 루트에 `.env` 파일을 생성하고 아래 내용을 복사하세요:
+
+```
+VITE_SUPABASE_URL=https://bucitypkrjoiaxkplpdb.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ1Y2l0eXBrcmpvaWF4a3BscGRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI5ODgyOTQsImV4cCI6MjA3ODU2NDI5NH0.zz1v7PPUqApD0PihYY3vYy54VcBWf9D8hiCNzQ5eZs4
+```
+
+## 2. Supabase 프로젝트 정보
+- **Project ID**: bucitypkrjoiaxkplpdb
+- **Project URL**: https://bucitypkrjoiaxkplpdb.supabase.co
+- **API Key**: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJ1Y2l0eXBrcmpvaWF4a3BscGRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI5ODgyOTQsImV4cCI6MjA3ODU2NDI5NH0.zz1v7PPUqApD0PihYY3vYy54VcBWf9D8hiCNzQ5eZs4
+
+## 3. 개발 서버 실행
+```bash
+npm run dev
+```
+
