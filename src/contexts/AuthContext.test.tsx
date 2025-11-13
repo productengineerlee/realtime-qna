@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { renderHook, act } from '@testing-library/react';
+import { renderHook } from '@testing-library/react';
 import { AuthProvider, useAuth } from './AuthContext';
 
 // Mock Supabase
@@ -57,9 +57,9 @@ describe('AuthContext', () => {
   });
 
   it('should throw error when useAuth is used outside provider', () => {
-    const { result } = renderHook(() => useAuth());
-
-    expect(result.error).toBeDefined();
+    expect(() => {
+      renderHook(() => useAuth());
+    }).toThrow();
   });
 });
 
